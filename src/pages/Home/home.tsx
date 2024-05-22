@@ -1,5 +1,5 @@
 export function Home() {
     return (
-        <>ola</>
+        <h1 className="text-slate-800">ola</h1>
     )
 }
