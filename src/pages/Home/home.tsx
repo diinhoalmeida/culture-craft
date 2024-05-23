@@ -47,7 +47,7 @@ export default function Home() {
             ))}
           </div>
 
-          {itemsToShow < contentPage.length - 2 && ( // verifica se ainda há mais itens para mostrar
+          {itemsToShow < contentPage.length - 2 && (
             <Button
               onClick={handleLoadMore}
               sx={{

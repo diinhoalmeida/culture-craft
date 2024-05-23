@@ -4,6 +4,7 @@ import imageTest from "../../assets/culture-craft-wallpaper.jpeg";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import IconContainer from "./iconContainer";
 import { getIconForType } from "../../utils/getIconForType";
+import { Tooltip } from "@mui/material";
 
 interface INewAndTrendingMediumCard {
   contentTrendingMediumCard: NewAndTrendingItem | undefined;
@@ -49,9 +50,11 @@ export default function NewAndTrendingMediumCard({
         </div>
       </div>
       <div className="row-span-1  pt-1">
-        <h2 className="text-lg text-slate-50 stroke-slate-950 line-clamp-2 overflow-hidden">
-          {contentTrendingMediumCard?.name}
-        </h2>
+        <Tooltip title={contentTrendingMediumCard?.name} arrow>
+          <h2 className="text-lg text-slate-50 stroke-slate-950 lg:line-clamp-1 line-clamp-2 overflow-hidden">
+            {contentTrendingMediumCard?.name}
+          </h2>
+        </Tooltip>
         <IconContainer
           icon={
             contentTrendingMediumCard?.type ? (
