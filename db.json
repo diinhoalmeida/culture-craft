@@ -1,0 +1,629 @@
+{
+    "newAndTranding": [
+      {
+        "id": 1,
+        "name": "Zelda: Breathing of The Wild",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "type": "game",
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 2,
+        "name": "Test Drive Unlimited a",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": true,
+        "recommended": false,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "art",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 3,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "video",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "movie",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "audio",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      },
+      {
+        "id": 1,
+        "name": "Test Drive Unlimited",
+        "views": [
+            {
+          "userId": 1,
+          "userName": "Edilson Almeida",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 2,
+          "userName": "Maria Silva",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        },
+        {
+          "userId": 3,
+          "userName": "João Pereira",
+          "userPhoto": "src/assets/foto-perfil.jpg"
+        }
+        ],
+        "newView": 150,
+        "newLikes": 50,
+        "newContent": false,
+        "recommended": true,
+        "contentImage": "src/assets/culture-craft-wallpaper.jpeg",
+        "authorDetails": {
+"authorId": 1,
+"authorName": "Edilson Almeida",
+"authorPhoto": "src/assets/foto-perfil.jpg"
+        },
+        "type": "game",
+        "comments": [
+            {
+                "commentId": 1,
+                "commentText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+        
+      }
+    ]
+  }
+  

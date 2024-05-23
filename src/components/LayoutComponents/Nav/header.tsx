@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <nav>
-      <div className="mx-auto flex flex-row justify-between items-center">
+      <div className="mx-auto flex flex-row justify-between items-center border-b border-slate-50">
         <div className="flex flex-row gap-4">
             <IconButton onClick={handleDrawerToggle}>
               <MenuIcon />
