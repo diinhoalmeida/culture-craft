@@ -26,7 +26,7 @@ const LittleCardDetails = ({
 }) => (
   <div className="flex flex-col w-full col-span-3 justify-between">
     <Tooltip title={name} arrow>
-      <h3 className="line-clamp-2 overflow-hidden text-text-color">{name}</h3>
+      <h3 className="line-clamp-2 overflow-hidden text-text-color [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)]">{name}</h3>
     </Tooltip>
     <div className="icon-container bg-[#02112A] bg-opacity-50 flex flex-row items-center gap-2 w-max h-6">
       {type ? getIconForType(type) : <FaFolder />}

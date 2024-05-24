@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { Button } from "@mui/material";
 import PopularCard from "../../components/HomeComponents/popularCard";
+import MostWatchedVideosBigCard from "../../components/HomeComponents/mostWatchedVideosBigCard";
+import MostWatchedVideosLittleCard from "../../components/HomeComponents/mostWatchedVideosLittleCard";
 
 export default function Home() {
   const [contentPage, setContentPage] = useState<NewAndTrendingItem[]>([]);
@@ -19,6 +21,9 @@ export default function Home() {
   const [popularContent, setPopularContent] = useState<NewAndTrendingItem[]>(
     []
   );
+  const [mostWatchedVideos, setMostWatchedVideos] = useState<
+    NewAndTrendingItem[]
+  >([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/contentHomePage")
@@ -27,6 +32,7 @@ export default function Home() {
         setContentPage(data[0].newsAndTrending);
         setNewAndTrendingItemsRendered(data[0].newsAndTrending.slice(3, 12));
         setPopularContent(data[1].popular);
+        setMostWatchedVideos(data[2].mostWatchedVideos);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -121,7 +127,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+      <section>
+        <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
+          <h1 className="text-center text-4xl">Most watched videos</h1>
+          <div className="grid grid-cols-3 min-h-[450px] gap-4">
+            <MostWatchedVideosBigCard
+              mostWatchedVideosBigCardContent={mostWatchedVideos[0]}
+            />
+            <div className="grid grid-rows-5 col-span-1 gap-4">
+              {mostWatchedVideos.slice(1).map((item, index) => (
+                <MostWatchedVideosLittleCard
+                  key={index}
+                  mostWatchedVideosLittleCardContent={item}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -51,7 +51,7 @@ export default function NewAndTrendingMediumCard({
       </div>
       <div className="row-span-1  pt-1">
         <Tooltip title={contentTrendingMediumCard?.name} arrow>
-          <h2 className="text-lg text-slate-50 stroke-slate-950 lg:line-clamp-1 line-clamp-2 overflow-hidden">
+          <h2 className="text-lg text-slate-50 [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] lg:line-clamp-1 line-clamp-2 overflow-hidden">
             {contentTrendingMediumCard?.name}
           </h2>
         </Tooltip>

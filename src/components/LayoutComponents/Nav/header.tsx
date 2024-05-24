@@ -39,6 +39,11 @@ export default function Header() {
               <h3 className=" text-slate-50">VIDEO</h3>
             </Link>
           </li>
+          <li>
+            <Link underline="none" href="/products">
+              <h3 className=" text-slate-50">ART</h3>
+            </Link>
+          </li>
         </ul>
         <div className="flex flex-row gap-5 items-center">
           <Link href="/cart">
@@ -74,6 +79,11 @@ export default function Header() {
             <li>
               <Link underline="none" className="" href="/products">
                 <h3 className=" text-slate-50">VIDEO</h3>
+              </Link>
+            </li>
+            <li>
+              <Link underline="none" className="" href="/products">
+                <h3 className=" text-slate-50">ART</h3>
               </Link>
             </li>
           </ul>

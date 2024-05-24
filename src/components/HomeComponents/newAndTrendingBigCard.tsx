@@ -5,16 +5,16 @@ import CustomSurplusAvatars from "./customSurplusAvatars";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { getIconForType } from "../../utils/getIconForType";
 
-interface INewAndTrendingBigCard {
+interface NewAndTrendingBigCardProps {
   contentTrendingBigCard: NewAndTrendingItem | undefined;
 }
 
 export default function NewAndTrendingBigCard({
   contentTrendingBigCard,
-}: INewAndTrendingBigCard) {
+}: NewAndTrendingBigCardProps) {
   return (
-    <div className="flex justify-center items-center col-span-2 bg-blur-image">
-      <div className="px-10 relative z-10 flex flex-col gap-2">
+    <div className="flex justify-center items-center col-span-2 relative">
+      <div className="px-10 z-10 flex flex-col gap-2 bg-opacity-80 min-w-[90%]">
         <div className="flex flex-row gap-2 items-center">
           <IconContainer
             icon={
@@ -41,7 +41,7 @@ export default function NewAndTrendingBigCard({
           />
         </div>
         <Tooltip title={contentTrendingBigCard?.name} arrow>
-          <h2 className="text-8xl text-slate-50 stroke-slate-950 line-clamp-2 overflow-hidden">
+          <h2 className="text-8xl text-slate-50 stroke-slate-950 line-clamp-2 overflow-hidden [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)]">
             {contentTrendingBigCard?.name}
           </h2>
         </Tooltip>
@@ -69,6 +69,13 @@ export default function NewAndTrendingBigCard({
           </div>
         </div>
       </div>
+      {contentTrendingBigCard?.contentImage && (
+        <img
+          src={contentTrendingBigCard.contentImage}
+          alt={contentTrendingBigCard.name}
+          className="absolute inset-0 w-full h-full object-cover z-0 filter blur-[2px]"
+        />
+      )}
     </div>
   );
 }
