@@ -15,7 +15,7 @@ const ContentPage = () => {
       try {
         const response = await fetch(`http://localhost:3001/${pageName}`);
         const data = await response.json();
-        setContent(data[0].moviesContent);
+        setContent(data[0][pageName + "Content"]);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

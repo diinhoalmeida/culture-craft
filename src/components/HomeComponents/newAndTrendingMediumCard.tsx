@@ -5,6 +5,7 @@ import { NewAndTrendingItem } from "../../interfaces/content";
 import IconContainer from "./iconContainer";
 import { getIconForType } from "../../utils/getIconForType";
 import { Tooltip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 interface INewAndTrendingMediumCard {
   contentTrendingMediumCard: NewAndTrendingItem | undefined;
@@ -14,7 +15,8 @@ export default function NewAndTrendingMediumCard({
   contentTrendingMediumCard,
 }: INewAndTrendingMediumCard) {
   return (
-    <div className="grid grid-rows-3 row-span-1">
+    <Link to={`/contentdetails/${contentTrendingMediumCard?.type}/${contentTrendingMediumCard?.id}`} className="row-span-1">
+    <div className="grid grid-rows-3 hover:cursor-pointer">
       <div className="row-span-2 bg-slate-400 p-2 flex flex-col justify-between relative">
         <img
           src={imageTest}
@@ -68,5 +70,6 @@ export default function NewAndTrendingMediumCard({
         />
       </div>
     </div>
+    </Link>
   );
 }

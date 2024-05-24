@@ -4,23 +4,31 @@ export interface UserView {
   userPhoto: string;
 }
 
-interface Comment {
+export interface Comment {
   commentId: number;
   commentText: string;
+  commentUserName: string;
+  commentUserPhoto: string;
+  createdAt: string;
 }
 
-interface AuthorDetails {
-    authorId: number;
-    authorName: string;
-    authorPhoto: string;
-  }
+export interface AuthorDetails {
+  authorId: number;
+  authorName: string;
+  authorPhoto: string;
+}
 
 export interface NewAndTrendingItem {
   id: number;
   name: string;
-  views: UserView[];
+  view: number;
+  faves: number;
+  votes: number;
+  score: number;
   createdAt: string;
+  views: UserView[];
   newView: number;
+  description: string;
   newLikes: number;
   newContent: boolean;
   recommended: boolean;
@@ -31,5 +39,5 @@ export interface NewAndTrendingItem {
 }
 
 export interface NewAndTrendingData {
-  newAndTranding: NewAndTrendingItem[];
+  newAndTrending: NewAndTrendingItem[];
 }
