@@ -25,23 +25,28 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link underline="none" href="/products">
+            <Link underline="none" href="/content/games">
               <h3 className=" text-slate-50">GAMES</h3>
             </Link>
           </li>
           <li>
-            <Link underline="none" href="/products">
-              <h3 className=" text-slate-50">AUDIO</h3>
+            <Link underline="none" href="/content/audios">
+              <h3 className=" text-slate-50">AUDIOS</h3>
             </Link>
           </li>
           <li>
-            <Link underline="none" href="/products">
-              <h3 className=" text-slate-50">VIDEO</h3>
+            <Link underline="none" href="/content/videos">
+              <h3 className=" text-slate-50">VIDEOS</h3>
             </Link>
           </li>
           <li>
-            <Link underline="none" href="/products">
-              <h3 className=" text-slate-50">ART</h3>
+            <Link underline="none" href="/content/arts">
+              <h3 className=" text-slate-50">ARTS</h3>
+            </Link>
+          </li>
+          <li>
+            <Link underline="none" href="/content/movies">
+              <h3 className=" text-slate-50">MOVIES</h3>
             </Link>
           </li>
         </ul>
@@ -67,23 +72,28 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link underline="none" className="" href="/products">
+              <Link underline="none" className="" href="/content/games">
                 <h3 className=" text-slate-50">GAMES</h3>
               </Link>
             </li>
             <li>
-              <Link underline="none" className="" href="/products">
-                <h3 className=" text-slate-50">AUDIO</h3>
+              <Link underline="none" className="" href="/content/audios">
+                <h3 className=" text-slate-50">AUDIOS</h3>
               </Link>
             </li>
             <li>
-              <Link underline="none" className="" href="/products">
-                <h3 className=" text-slate-50">VIDEO</h3>
+              <Link underline="none" className="" href="/content/videos">
+                <h3 className=" text-slate-50">VIDEOS</h3>
               </Link>
             </li>
             <li>
-              <Link underline="none" className="" href="/products">
-                <h3 className=" text-slate-50">ART</h3>
+              <Link underline="none" className="" href="/content/arts">
+                <h3 className=" text-slate-50">ARTS</h3>
+              </Link>
+            </li>
+            <li>
+              <Link underline="none" className="" href="/content/movies">
+                <h3 className=" text-slate-50">MOVIES</h3>
               </Link>
             </li>
           </ul>
