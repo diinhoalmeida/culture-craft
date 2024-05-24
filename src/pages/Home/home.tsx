@@ -1,13 +1,9 @@
 import "./home.css";
-import NewAndTrendingBigCard from "../../components/HomeComponents/newAndTrendingBigCard";
-import NewAndTrendingMediumCard from "../../components/HomeComponents/newAndTrendingMediumCard";
-import NewAndTrendingLittleCard from "../../components/HomeComponents/newAndTrendingLittleCard";
 import { useEffect, useState } from "react";
 import { NewAndTrendingItem } from "../../interfaces/content";
-import { Button } from "@mui/material";
-import PopularCard from "../../components/HomeComponents/popularCard";
-import MostWatchedVideosBigCard from "../../components/HomeComponents/mostWatchedVideosBigCard";
-import MostWatchedVideosLittleCard from "../../components/HomeComponents/mostWatchedVideosLittleCard";
+import NewAndTrendingSection from "../../components/HomeComponents/NewAndTrendingSection/newAndTrendingSection";
+import PopularSection from "../../components/HomeComponents/PopularSection/popularSection";
+import MostWatchedVideosSection from "../../components/HomeComponents/MostWatchedVideosSection/mostWatchedVideosSection";
 
 export default function Home() {
   const [contentPage, setContentPage] = useState<NewAndTrendingItem[]>([]);
@@ -56,95 +52,20 @@ export default function Home() {
 
   return (
     <>
-      <section>
-        <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
-          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">New and trending</h1>
-          <div className="grid sm:grid-cols-3 grid-cols-2 min-h-[450px] gap-4">
-            <NewAndTrendingBigCard contentTrendingBigCard={contentPage[0]} />
-            <div className="grid grid-rows-2 col-span-2 sm:col-span-1 gap-4 ">
-              {contentPage.slice(1, 3).map((item, index) => (
-                <NewAndTrendingMediumCard
-                  key={index}
-                  contentTrendingMediumCard={item}
-                />
-              ))}
-            </div>
-          </div>
-          <ul className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-            {newAndTrendingItemsRendered.map((item, index) => (
-              <li key={index}>
-                <NewAndTrendingLittleCard contentTrendingLittleCard={item} />
-              </li>
-            ))}
-          </ul>
-          <Button
-            disabled={disableButtonNewAndTrending}
-            onClick={handleLoadMoreNewAndTrending}
-            sx={{
-              bgcolor: "#ffffff",
-              border: "none",
-              color: "#000",
-              position: "absolute",
-              bottom: -20,
-              right: 20,
-              borderRadius: "20px",
-              width: "max-width",
-              "&:hover": {
-                bgcolor: "#e6dfda",
-                border: "none",
-              },
-            }}
-          >
-            Load more
-          </Button>
-        </div>
-      </section>
-      <section>
-        <div className="flex flex-col gap-5">
-          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Popular</h1>
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
-            {popularContent.slice(0, popularItemsToShow).map((item, index) => (
-              <PopularCard key={index} contentPopularCard={item} />
-            ))}
-          </div>
-          <div className="w-full flex justify-center mt-5">
-            <Button
-              disabled={disableButtonPopular}
-              onClick={handleLoadMorePopular}
-              sx={{
-                bgcolor: "#ffffff",
-                border: "none",
-                color: "#000",
-                borderRadius: "80px",
-                "&:hover": {
-                  bgcolor: "#e6dfda",
-                  border: "none",
-                },
-              }}
-            >
-              Load more
-            </Button>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
-          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Most watched videos</h1>
-          <div className="grid md-2:grid-cols-3 grid-cols-2 min-h-[450px] gap-4">
-            <MostWatchedVideosBigCard
-              mostWatchedVideosBigCardContent={mostWatchedVideos[0]}
-            />
-            <div className="grid grid-rows-5 md-2:col-span-1 col-span-2 gap-4">
-              {mostWatchedVideos.slice(1).map((item, index) => (
-                <MostWatchedVideosLittleCard
-                  key={index}
-                  mostWatchedVideosLittleCardContent={item}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewAndTrendingSection
+        contentPage={contentPage}
+        newAndTrendingItemsToShow={newAndTrendingItemsToShow}
+        newAndTrendingItemsRendered={newAndTrendingItemsRendered}
+        disableButtonNewAndTrending={disableButtonNewAndTrending}
+        handleLoadMoreNewAndTrending={handleLoadMoreNewAndTrending}
+      />
+      <PopularSection
+        popularContent={popularContent}
+        popularItemsToShow={popularItemsToShow}
+        disableButtonPopular={disableButtonPopular}
+        handleLoadMorePopular={handleLoadMorePopular}
+      />
+      <MostWatchedVideosSection mostWatchedVideos={mostWatchedVideos} />
     </>
   );
 }
