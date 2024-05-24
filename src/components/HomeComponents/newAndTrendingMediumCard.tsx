@@ -15,7 +15,7 @@ export default function NewAndTrendingMediumCard({
   contentTrendingMediumCard,
 }: INewAndTrendingMediumCard) {
   return (
-    <Link to={`/contentdetails/${contentTrendingMediumCard?.type}/${contentTrendingMediumCard?.id}`} className="row-span-1">
+    <Link to={`/contentdetails/${contentTrendingMediumCard?.type}/${contentTrendingMediumCard?.id}`} className="row-span-1 col-span-1">
     <div className="grid grid-rows-3 hover:cursor-pointer">
       <div className="row-span-2 bg-slate-400 p-2 flex flex-col justify-between relative">
         <img

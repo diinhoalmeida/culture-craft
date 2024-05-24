@@ -16,6 +16,14 @@ export default {
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
+      screens: {
+        'xs': "540px",
+        'sm': '680px',
+        'md': '768px',
+        'md-2': '860px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
     },
   },
   plugins: [

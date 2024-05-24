@@ -14,7 +14,7 @@ export default function NewAndTrendingBigCard({
   contentTrendingBigCard,
 }: NewAndTrendingBigCardProps) {
   return (
-    <div className="flex justify-center items-center col-span-2 relative">
+    <div className="flex justify-center items-center col-span-2 relative sm:py-0 py-10">
       <div className="px-10 z-10 flex flex-col gap-2 bg-opacity-80 min-w-[90%]">
         <div className="flex flex-row gap-2 items-center">
           <IconContainer

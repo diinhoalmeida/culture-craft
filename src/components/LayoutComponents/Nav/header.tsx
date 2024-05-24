@@ -18,7 +18,7 @@ export default function Header() {
               <MenuIcon />
             </IconButton>
         </div>
-        <ul className="flex flex-row gap-5">
+        <ul className="hidden sm:flex flex-row gap-5">
           <li>
             <Link underline="none" href="/">
               <h3 className=" text-slate-50">HOME</h3>

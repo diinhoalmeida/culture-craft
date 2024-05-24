@@ -15,7 +15,7 @@ export default function MostWatchedVideosBigCard({
       to={`/contentdetails/${mostWatchedVideosBigCardContent?.type}/${mostWatchedVideosBigCardContent?.id}`}
       className="col-span-2 flex flex-col justify-center relative hover:cursor-pointer gap-2"
     >
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full min-h-[450px]">
         <div className="absolute z-10 w-full h-full flex items-center justify-center hover:text-[#FF130A]">
           <FaYoutube size={70} />
         </div>

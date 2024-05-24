@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/LayoutComponents/Nav/header";
 import "./defaultLayout.css";
+import Footer from "../components/LayoutComponents/footer";
 
 export function DefaultLayout() {
   return (
@@ -10,6 +11,7 @@ export function DefaultLayout() {
       <div className="lg:w-[1025px] w-full flex flex-col z-10 pt-5 gap-8">
         <Header />
         <Outlet />
+        <Footer />
       </div>
     </div>
   );

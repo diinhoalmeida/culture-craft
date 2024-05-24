@@ -59,9 +59,9 @@ export default function Home() {
       <section>
         <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
           <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">New and trending</h1>
-          <div className="grid grid-cols-3 min-h-[450px] gap-4">
+          <div className="grid sm:grid-cols-3 grid-cols-2 min-h-[450px] gap-4">
             <NewAndTrendingBigCard contentTrendingBigCard={contentPage[0]} />
-            <div className="grid grid-rows-2 col-span-1 gap-4">
+            <div className="grid grid-rows-2 col-span-2 sm:col-span-1 gap-4 ">
               {contentPage.slice(1, 3).map((item, index) => (
                 <NewAndTrendingMediumCard
                   key={index}
@@ -70,7 +70,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <ul className="grid grid-cols-3 gap-4">
+          <ul className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {newAndTrendingItemsRendered.map((item, index) => (
               <li key={index}>
                 <NewAndTrendingLittleCard contentTrendingLittleCard={item} />
@@ -102,7 +102,7 @@ export default function Home() {
       <section>
         <div className="flex flex-col gap-5">
           <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Popular</h1>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
             {popularContent.slice(0, popularItemsToShow).map((item, index) => (
               <PopularCard key={index} contentPopularCard={item} />
             ))}
@@ -130,11 +130,11 @@ export default function Home() {
       <section>
         <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
           <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Most watched videos</h1>
-          <div className="grid grid-cols-3 min-h-[450px] gap-4">
+          <div className="grid md-2:grid-cols-3 grid-cols-2 min-h-[450px] gap-4">
             <MostWatchedVideosBigCard
               mostWatchedVideosBigCardContent={mostWatchedVideos[0]}
             />
-            <div className="grid grid-rows-5 col-span-1 gap-4">
+            <div className="grid grid-rows-5 md-2:col-span-1 col-span-2 gap-4">
               {mostWatchedVideos.slice(1).map((item, index) => (
                 <MostWatchedVideosLittleCard
                   key={index}
