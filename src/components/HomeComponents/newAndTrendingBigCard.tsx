@@ -41,7 +41,7 @@ export default function NewAndTrendingBigCard({
           />
         </div>
         <Tooltip title={contentTrendingBigCard?.name} arrow>
-          <h2 className="text-8xl text-slate-50 stroke-slate-950 line-clamp-2">
+          <h2 className="text-8xl text-slate-50 stroke-slate-950 line-clamp-2 overflow-hidden">
             {contentTrendingBigCard?.name}
           </h2>
         </Tooltip>

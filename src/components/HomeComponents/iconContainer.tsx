@@ -18,7 +18,9 @@ const IconContainer = ({
   avatar,
 }: IIconContainer) => (
   <div
-    className={`icon-container ${bgColor} ${bgOpacity} flex flex-row items-center gap-2 w-max`}
+    className={`${
+      icon && "icon-container"
+    } ${bgColor} ${bgOpacity} flex flex-row items-center gap-2 w-max`}
   >
     {icon}
     <p className={textColor}>

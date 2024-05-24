@@ -14,7 +14,7 @@ export default function NewAndTrendingMediumCard({
   contentTrendingMediumCard,
 }: INewAndTrendingMediumCard) {
   return (
-    <div className="grid grid-rows-3 row-span-1 ">
+    <div className="grid grid-rows-3 row-span-1">
       <div className="row-span-2 bg-slate-400 p-2 flex flex-col justify-between relative">
         <img
           src={imageTest}

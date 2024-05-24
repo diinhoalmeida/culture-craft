@@ -1,26 +1,52 @@
 import "./home.css";
-
 import NewAndTrendingBigCard from "../../components/HomeComponents/newAndTrendingBigCard";
 import NewAndTrendingMediumCard from "../../components/HomeComponents/newAndTrendingMediumCard";
-import NewAndTrendingLitteCard from "../../components/HomeComponents/newAndTrendingLitteCard";
+import NewAndTrendingLittleCard from "../../components/HomeComponents/newAndTrendingLittleCard";
 import { useEffect, useState } from "react";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { Button } from "@mui/material";
+import PopularCard from "../../components/HomeComponents/popularCard";
 
 export default function Home() {
   const [contentPage, setContentPage] = useState<NewAndTrendingItem[]>([]);
-  const [itemsToShow, setItemsToShow] = useState(9);
-
-  const handleLoadMore = () => {
-    setItemsToShow((prevItemsToShow) => prevItemsToShow + 3);
-  };
+  const [newAndTrendingItemsToShow, setNewAndTrendingItemsToShow] = useState(9);
+  const [popularItemsToShow, setPopularItemsToShow] = useState(4);
+  const [disableButtonNewAndTrending, setDisableButtonNewAndTrending] =
+    useState(false);
+  const [disableButtonPopular, setDisableButtonPopular] = useState(false);
+  const [newAndTrendingItemsRendered, setNewAndTrendingItemsRendered] =
+    useState<NewAndTrendingItem[]>([]);
+  const [popularContent, setPopularContent] = useState<NewAndTrendingItem[]>(
+    []
+  );
 
   useEffect(() => {
-    fetch("http://localhost:3001/newAndTranding")
+    fetch("http://localhost:3001/contentHomePage")
       .then((response) => response.json())
-      .then((data) => setContentPage(data))
+      .then((data) => {
+        setContentPage(data[0].newsAndTrending);
+        setNewAndTrendingItemsRendered(data[0].newsAndTrending.slice(3, 12));
+        setPopularContent(data[1].popular);
+      })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
+  const handleLoadMoreNewAndTrending = () => {
+    const nextItemsToShow = newAndTrendingItemsToShow + 3;
+    if (nextItemsToShow >= 15) {
+      setDisableButtonNewAndTrending(true);
+    }
+    setNewAndTrendingItemsToShow(nextItemsToShow);
+    setNewAndTrendingItemsRendered(contentPage.slice(2, nextItemsToShow + 2));
+  };
+
+  const handleLoadMorePopular = () => {
+    const nextPopularItemsToShow = popularItemsToShow + 2;
+    if (nextPopularItemsToShow >= 8) {
+      setDisableButtonPopular(true);
+    }
+    setPopularItemsToShow(nextPopularItemsToShow);
+  };
 
   return (
     <>
@@ -38,27 +64,52 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-4">
-            {contentPage.slice(2, itemsToShow + 2).map((item, index) => (
-              <NewAndTrendingLitteCard
-                key={index}
-                contentTrendingLittleCard={item}
-              />
+          <ul className="grid grid-cols-3 gap-4">
+            {newAndTrendingItemsRendered.map((item, index) => (
+              <li key={index}>
+                <NewAndTrendingLittleCard contentTrendingLittleCard={item} />
+              </li>
+            ))}
+          </ul>
+          <Button
+            disabled={disableButtonNewAndTrending}
+            onClick={handleLoadMoreNewAndTrending}
+            sx={{
+              bgcolor: "#ffffff",
+              border: "none",
+              color: "#000",
+              position: "absolute",
+              bottom: -20,
+              right: 20,
+              borderRadius: "20px",
+              width: "max-width",
+              "&:hover": {
+                bgcolor: "#e6dfda",
+                border: "none",
+              },
+            }}
+          >
+            Load more
+          </Button>
+        </div>
+      </section>
+      <section>
+        <div className="flex flex-col gap-5">
+          <h1 className="text-center text-4xl">Popular</h1>
+          <div className="grid grid-cols-2 gap-4">
+            {popularContent.slice(0, popularItemsToShow).map((item, index) => (
+              <PopularCard key={index} contentPopularCard={item} />
             ))}
           </div>
-
-          {itemsToShow < contentPage.length - 2 && (
+          <div className="w-full flex justify-center mt-5">
             <Button
-              onClick={handleLoadMore}
+              disabled={disableButtonPopular}
+              onClick={handleLoadMorePopular}
               sx={{
                 bgcolor: "#ffffff",
                 border: "none",
                 color: "#000",
-                position: "absolute",
-                bottom: -20,
-                right: 20,
-                borderRadius: "20px",
-                width: "max-width",
+                borderRadius: "80px",
                 "&:hover": {
                   bgcolor: "#e6dfda",
                   border: "none",
@@ -67,12 +118,10 @@ export default function Home() {
             >
               Load more
             </Button>
-          )}
+          </div>
         </div>
       </section>
-      <section>
-        <h1>Ola</h1>
-      </section>
+      
     </>
   );
 }
