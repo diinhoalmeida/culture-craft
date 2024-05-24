@@ -62,7 +62,7 @@ const ContentPage = () => {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4">
         <FormControl variant="outlined" style={{ minWidth: 120 }}>
           <InputLabel sx={{color: '#fff'}} id="sort-likes-label">Sort by Likes</InputLabel>
           <Select
@@ -109,7 +109,7 @@ const ContentPage = () => {
         </FormControl>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 pb-10">
+      <div className="grid sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4 pb-10">
         {sortedAndFilteredContent().map((item, index) => (
           <NewAndTrendingMediumCard
             key={index}
