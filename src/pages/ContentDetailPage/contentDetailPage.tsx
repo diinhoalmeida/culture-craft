@@ -49,16 +49,16 @@ export default function ContentDetailPage() {
         {contentDetails?.name}
       </h1>
       <PlayerCard type={type as string} />
-      <div className="grid grid-cols-3 gap-6">
-        <div className="col-span-1 flex flex-col gap-3">
+      <div className="grid xs:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-6">
+        <div className="sm:col-span-1 col-span-2 flex flex-col gap-3">
           <h1 className="text-3xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color">
             Credits & Info
           </h1>
           <div className="grid grid-cols-8 border-b border-slate-50 gap-3 pb-5">
-            <div className="col-span-1">
+            <div className="md-3:col-span-1 col-span-2">
               <Avatar alt="test" src={imageTest} />
             </div>
-            <div className="fle flex-col items-center col-span-4">
+            <div className="fle flex-col items-center md-3:col-span-4 col-span-3">
               <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color">
                 {contentDetails?.authorDetails.authorName}
               </p>
@@ -66,7 +66,7 @@ export default function ContentDetailPage() {
                 Author
               </p>
             </div>
-            <div className="col-span-3 flex justify-center items-center">
+            <div className="md-3:col-span-3 col-span-2 flex justify-center items-center">
               <Button
                 sx={{
                   bgcolor: "#ffffff",

@@ -7,7 +7,7 @@ interface IPlayerCard {
 
 export default function PlayerCard({type}: IPlayerCard) {
   return (
-    <div className="min-h-[450px] relative w-full flex justify-center items-center hover:text-[#FF130A] hover:cursor-pointer">
+    <div className="sm:min-h-[450px] relative w-full flex justify-center items-center hover:text-[#FF130A] hover:cursor-pointer">
       {type !== "art" && (
         <div className="absolute z-10">
           <FaPlayCircle size={90}/>

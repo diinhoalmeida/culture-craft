@@ -21,6 +21,7 @@ export default {
         'sm': '680px',
         'md': '768px',
         'md-2': '860px',
+        'md-3': '980px',
         'lg': '1024px',
         'xl': '1280px',
       },
