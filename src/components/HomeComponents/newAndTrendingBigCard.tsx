@@ -4,6 +4,7 @@ import { Button, Tooltip } from "@mui/material";
 import CustomSurplusAvatars from "./customSurplusAvatars";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { getIconForType } from "../../utils/getIconForType";
+import { Link } from "react-router-dom";
 
 interface NewAndTrendingBigCardProps {
   contentTrendingBigCard: NewAndTrendingItem | undefined;
@@ -45,12 +46,12 @@ export default function NewAndTrendingBigCard({
             {contentTrendingBigCard?.name}
           </h2>
         </Tooltip>
+        <Link to={`/contentdetails/${contentTrendingBigCard?.type}/${contentTrendingBigCard?.id}`}>
         <Button
           sx={{
             bgcolor: "#ffffff",
             border: "none",
             color: "#000",
-            width: "20%",
             "&:hover": {
               bgcolor: "#e6dfda",
               border: "none",
@@ -59,6 +60,8 @@ export default function NewAndTrendingBigCard({
         >
           EXPLORE
         </Button>
+
+        </Link>
         <div className="flex flex-row items-center gap-3">
           <CustomSurplusAvatars
             total={contentTrendingBigCard?.views.length}

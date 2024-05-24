@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <section>
         <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
-          <h1 className="text-center text-4xl">New and trending</h1>
+          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">New and trending</h1>
           <div className="grid grid-cols-3 min-h-[450px] gap-4">
             <NewAndTrendingBigCard contentTrendingBigCard={contentPage[0]} />
             <div className="grid grid-rows-2 col-span-1 gap-4">
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
       <section>
         <div className="flex flex-col gap-5">
-          <h1 className="text-center text-4xl">Popular</h1>
+          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Popular</h1>
           <div className="grid grid-cols-2 gap-4">
             {popularContent.slice(0, popularItemsToShow).map((item, index) => (
               <PopularCard key={index} contentPopularCard={item} />
@@ -129,7 +129,7 @@ export default function Home() {
       </section>
       <section>
         <div className="flex flex-col gap-5 border-b border-slate-50 pb-10 relative">
-          <h1 className="text-center text-4xl">Most watched videos</h1>
+          <h1 className="text-4xl [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color text-center">Most watched videos</h1>
           <div className="grid grid-cols-3 min-h-[450px] gap-4">
             <MostWatchedVideosBigCard
               mostWatchedVideosBigCardContent={mostWatchedVideos[0]}

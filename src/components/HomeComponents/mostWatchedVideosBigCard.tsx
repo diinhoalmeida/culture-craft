@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { FaYoutube } from "react-icons/fa";
-import { NewAndTrendingItem } from "../../interfaces/content";
 import { Tooltip } from "@mui/material";
+import { NewAndTrendingItem } from "../../interfaces/content";
 
 interface IMostWatchedVideosBigCard {
   mostWatchedVideosBigCardContent: NewAndTrendingItem | undefined;
@@ -10,7 +11,10 @@ export default function MostWatchedVideosBigCard({
   mostWatchedVideosBigCardContent,
 }: IMostWatchedVideosBigCard) {
   return (
-    <div className="col-span-2 flex flex-col justify-center relative hover:cursor-pointer gap-2">
+    <Link
+      to={`/contentdetails/${mostWatchedVideosBigCardContent?.type}/${mostWatchedVideosBigCardContent?.id}`}
+      className="col-span-2 flex flex-col justify-center relative hover:cursor-pointer gap-2"
+    >
       <div className="relative w-full h-full">
         <div className="absolute z-10 w-full h-full flex items-center justify-center hover:text-[#FF130A]">
           <FaYoutube size={70} />
@@ -34,6 +38,6 @@ export default function MostWatchedVideosBigCard({
           {mostWatchedVideosBigCardContent?.authorDetails.authorName}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -2,6 +2,7 @@ import { Avatar, Button, Tooltip } from "@mui/material";
 import { FaFolder } from "react-icons/fa";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { getIconForType } from "../../utils/getIconForType";
+import { Link } from "react-router-dom";
 
 interface INewAndTrendingLittleCard {
   contentTrendingLittleCard: NewAndTrendingItem | undefined;
@@ -64,10 +65,13 @@ export default function NewAndTrendingLittleCard({
   const { contentImage, name, type, authorDetails } =
     contentTrendingLittleCard || {};
   return (
-    <div className="col-span-1 grid grid-cols-8 border-b border-slate-50 pb-3 gap-2">
+    <Link to={`/contentdetails/${contentTrendingLittleCard?.type}/${contentTrendingLittleCard?.id}`} className="col-span-1 ">
+
+    <div className="grid grid-cols-8 border-b border-slate-50 pb-3 gap-2">
       <LittleCardImage imageUrl={contentImage} />
       <LittleCardDetails name={name} type={type} />
       <LittleCardActions authorPhoto={authorDetails?.authorPhoto} />
     </div>
+    </Link>
   );
 }

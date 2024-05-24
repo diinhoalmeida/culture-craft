@@ -4,6 +4,7 @@ import avatar from "../../assets/foto-perfil.jpg";
 import { getIconForType } from "../../utils/getIconForType";
 import IconContainer from "./iconContainer";
 import { NewAndTrendingItem } from "../../interfaces/content";
+import { Link } from "react-router-dom";
 
 interface IPopularCard {
   contentPopularCard: NewAndTrendingItem | undefined;
@@ -60,7 +61,10 @@ const CardStats = ({
 
 export default function PopularCard({ contentPopularCard }: IPopularCard) {
   return (
-    <div className="p-5 flex flex-col items-center relative bg-slate-500 col-span-1 hover:cursor-pointer">
+    <Link
+      to={`/contentdetails/${contentPopularCard?.type}/${contentPopularCard?.id}`}
+      className="p-5 flex flex-col items-center relative bg-slate-500 col-span-1 hover:cursor-pointer"
+    >
       <div className="absolute inset-0">
         <img
           src={contentPopularCard?.contentImage}
@@ -92,6 +96,6 @@ export default function PopularCard({ contentPopularCard }: IPopularCard) {
           <img src={image} alt="Foreground" className="w-28 h-28" />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
