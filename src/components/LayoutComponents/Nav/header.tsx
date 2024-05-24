@@ -51,7 +51,7 @@ export default function Header() {
           </li>
         </ul>
         <div className="flex flex-row gap-5 items-center">
-          <Link href="/cart">
+          <Link href="/">
             <IconButton>
               <ShoppingBagIcon fontSize="large" />
             </IconButton>

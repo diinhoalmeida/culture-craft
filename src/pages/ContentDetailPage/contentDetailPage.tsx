@@ -4,6 +4,7 @@ import imageTest from "../../assets/foto-perfil.jpg";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Comment, NewAndTrendingItem } from "../../interfaces/content";
+import { formatDate } from "../../utils/formatDate";
 
 export default function ContentDetailPage() {
   const { id, type } = useParams();
@@ -83,6 +84,18 @@ export default function ContentDetailPage() {
             </div>
           </div>
           <div className="flex flex-col border-b border-slate-50 pb-5">
+            <div className="grid grid-cols-3">
+              <div className="col-span-1">
+                <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-gray-400">
+                  Date:
+                </p>
+              </div>
+              <div className="col-span-2">
+                <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color">
+                  {formatDate(contentDetails?.createdAt as string)}
+                </p>
+              </div>
+            </div>
             <div className="grid grid-cols-3">
               <div className="col-span-1">
                 <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-gray-400">
@@ -190,7 +203,7 @@ export default function ContentDetailPage() {
                     {comment.commentUserName}
                   </p>
                   <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-gray-400">
-                    - {comment.createdAt}
+                    - {formatDate(comment.createdAt)}
                   </p>
                 </div>
                 <div>

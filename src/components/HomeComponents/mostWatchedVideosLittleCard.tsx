@@ -1,6 +1,7 @@
 import { Tooltip } from "@mui/material";
 import { NewAndTrendingItem } from "../../interfaces/content";
 import { Link } from "react-router-dom";
+import { formatDate } from "../../utils/formatDate";
 
 interface IMostWatchedVideosLittleCard {
   mostWatchedVideosLittleCardContent: NewAndTrendingItem | undefined;
@@ -29,7 +30,7 @@ export default function MostWatchedVideosLittleCard({
             </h3>
           </Tooltip>
           <p className="text-gray-400">
-            {mostWatchedVideosLittleCardContent?.createdAt} -{" "}
+            {formatDate(mostWatchedVideosLittleCardContent?.createdAt as string)} -{" "}
             {mostWatchedVideosLittleCardContent?.authorDetails.authorName}
           </p>
         </div>

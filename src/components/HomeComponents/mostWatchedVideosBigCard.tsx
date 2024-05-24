@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FaYoutube } from "react-icons/fa";
 import { Tooltip } from "@mui/material";
 import { NewAndTrendingItem } from "../../interfaces/content";
+import { formatDate } from "../../utils/formatDate";
 
 interface IMostWatchedVideosBigCard {
   mostWatchedVideosBigCardContent: NewAndTrendingItem | undefined;
@@ -34,7 +35,7 @@ export default function MostWatchedVideosBigCard({
           </h2>
         </Tooltip>
         <p className="text-md text-gray-500">
-          {mostWatchedVideosBigCardContent?.createdAt} -{" "}
+          {formatDate(mostWatchedVideosBigCardContent?.createdAt as string)} -{" "}
           {mostWatchedVideosBigCardContent?.authorDetails.authorName}
         </p>
       </div>
