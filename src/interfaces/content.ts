@@ -28,6 +28,7 @@ export interface NewAndTrendingItem {
   createdAt: string;
   views: UserView[];
   newView: number;
+  category: string;
   description: string;
   newLikes: number;
   newContent: boolean;

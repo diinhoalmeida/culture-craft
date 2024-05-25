@@ -57,7 +57,7 @@ export default function ContentDetailPage() {
           </h1>
           <div className="grid grid-cols-8 border-b border-slate-50 gap-3 pb-5">
             <div className="md-3:col-span-1 col-span-2">
-              <Avatar alt="test" src={imageTest} />
+              <Avatar alt="Edilson Almeida" src={imageTest} />
             </div>
             <div className="fle flex-col items-center md-3:col-span-4 col-span-3">
               <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)] text-text-color">
@@ -145,7 +145,7 @@ export default function ContentDetailPage() {
               </div>
             </div>
             <div>
-            <Rating name="read-only" value={contentDetails?.score} readOnly />
+              <Rating name="read-only" value={contentDetails?.score} readOnly />
             </div>
           </div>
           <div className="flex flex-col">
