@@ -1,0 +1,13 @@
+.bg-image-blur {
+  background-image: url("../assets/culture-craft-wallpaper.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.bg-image-blur-overlay {
+  background-color: #1375c0;
+  opacity: 0.1;
+}

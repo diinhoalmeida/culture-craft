@@ -1,0 +1,43 @@
+/* styles.css */
+.bg-blur-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/culture-craft-wallpaper.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-blur-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(2px); /* Ajuste o valor do blur conforme necessário */
+  z-index: 1;
+}
+
+.bg-blur-image .relative {
+  position: relative;
+  z-index: 10;
+}
+
+/* home.css */
+
+.icon-container {
+  box-shadow: 0 0 5px 0 rgb(248, 250, 252, 0.3); /* Azul com transparência */
+  padding: 5px; /* Adicione algum espaçamento se necessário */
+  border-radius: 5px; /* Arredonde as bordas se desejar */
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  max-height: 185px;
+  -webkit-line-clamp: 2; /* número de linhas que você deseja mostrar */
+}
