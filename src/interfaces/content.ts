@@ -33,7 +33,7 @@ export interface NewAndTrendingItem {
   newLikes: number;
   newContent: boolean;
   recommended: boolean;
-  type: "game" | "art" | "video" | "audio";
+  type: "game" | "art" | "video" | "audio" | "movie";
   contentImage: string;
   comments: Comment[];
   authorDetails: AuthorDetails;

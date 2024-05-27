@@ -1,4 +1,3 @@
-// PopularSection.js
 import { Button } from "@mui/material";
 import PopularCard from "../popularCard";
 import { NewAndTrendingItem } from "../../../interfaces/content";
