@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { IconButton, Link, Drawer } from "@mui/material";
@@ -14,9 +14,9 @@ export default function Header() {
     <nav>
       <div className="mx-auto flex flex-row justify-between items-center border-b border-slate-50">
         <div className="flex flex-row gap-4">
-            <IconButton onClick={handleDrawerToggle}>
-              <MenuIcon />
-            </IconButton>
+          <IconButton onClick={handleDrawerToggle}>
+            <MenuIcon />
+          </IconButton>
         </div>
         <ul className="hidden sm:flex flex-row gap-5">
           <li>

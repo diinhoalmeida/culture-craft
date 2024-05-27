@@ -46,21 +46,22 @@ export default function NewAndTrendingBigCard({
             {contentTrendingBigCard?.name}
           </h2>
         </Tooltip>
-        <Link to={`/contentdetails/${contentTrendingBigCard?.type}/${contentTrendingBigCard?.id}`}>
-        <Button
-          sx={{
-            bgcolor: "#ffffff",
-            border: "none",
-            color: "#000",
-            "&:hover": {
-              bgcolor: "#e6dfda",
-              border: "none",
-            },
-          }}
+        <Link
+          to={`/contentdetails/${contentTrendingBigCard?.type}/${contentTrendingBigCard?.id}`}
         >
-          EXPLORE
-        </Button>
-
+          <Button
+            sx={{
+              bgcolor: "#ffffff",
+              border: "none",
+              color: "#000",
+              "&:hover": {
+                bgcolor: "#e6dfda",
+                border: "none",
+              },
+            }}
+          >
+            EXPLORE
+          </Button>
         </Link>
         <div className="flex flex-row items-center gap-3">
           <CustomSurplusAvatars

@@ -24,7 +24,6 @@ const ContentPage = () => {
         const pageContent = data[0][pageName + "Content"];
         setContent(pageContent);
 
-        // Extract unique categories
         const uniqueCategories = Array.from(
           new Set(pageContent.map((item: NewAndTrendingItem) => item.category))
         );

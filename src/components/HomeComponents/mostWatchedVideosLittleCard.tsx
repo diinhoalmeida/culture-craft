@@ -30,8 +30,10 @@ export default function MostWatchedVideosLittleCard({
             </h3>
           </Tooltip>
           <p className="text-gray-400">
-            {formatDate(mostWatchedVideosLittleCardContent?.createdAt as string)} -{" "}
-            {mostWatchedVideosLittleCardContent?.authorDetails.authorName}
+            {formatDate(
+              mostWatchedVideosLittleCardContent?.createdAt as string
+            )}{" "}
+            - {mostWatchedVideosLittleCardContent?.authorDetails.authorName}
           </p>
         </div>
       </div>

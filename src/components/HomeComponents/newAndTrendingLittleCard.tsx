@@ -23,11 +23,13 @@ const LittleCardDetails = ({
   type,
 }: {
   name: string | undefined;
-  type: "game" | "art" | "video" | "audio" | undefined;
+  type: "game" | "art" | "video" | "audio" | "movie" | undefined;
 }) => (
   <div className="flex flex-col w-full col-span-3 justify-between">
     <Tooltip title={name} arrow>
-      <h3 className="line-clamp-2 overflow-hidden text-text-color [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)]">{name}</h3>
+      <h3 className="line-clamp-2 overflow-hidden text-text-color [text-shadow:_1px_1px_1px_rgb(0_0_0_/_100%)]">
+        {name}
+      </h3>
     </Tooltip>
     <div className="icon-container bg-[#02112A] bg-opacity-50 flex flex-row items-center gap-2 w-max h-6">
       {type ? getIconForType(type) : <FaFolder />}
@@ -65,13 +67,15 @@ export default function NewAndTrendingLittleCard({
   const { contentImage, name, type, authorDetails } =
     contentTrendingLittleCard || {};
   return (
-    <Link to={`/contentdetails/${contentTrendingLittleCard?.type}/${contentTrendingLittleCard?.id}`} className="col-span-1 ">
-
-    <div className="grid grid-cols-8 border-b border-slate-50 pb-3 gap-2">
-      <LittleCardImage imageUrl={contentImage} />
-      <LittleCardDetails name={name} type={type} />
-      <LittleCardActions authorPhoto={authorDetails?.authorPhoto} />
-    </div>
+    <Link
+      to={`/contentdetails/${contentTrendingLittleCard?.type}/${contentTrendingLittleCard?.id}`}
+      className="col-span-1 "
+    >
+      <div className="grid grid-cols-8 border-b border-slate-50 pb-3 gap-2">
+        <LittleCardImage imageUrl={contentImage} />
+        <LittleCardDetails name={name} type={type} />
+        <LittleCardActions authorPhoto={authorDetails?.authorPhoto} />
+      </div>
     </Link>
   );
 }
